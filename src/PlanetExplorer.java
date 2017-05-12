@@ -8,7 +8,7 @@ public class PlanetExplorer {
 	private int x,y; //coordinates of a grid
 	private int obs_x, obs_y; //coordinates of obstacles
 	private int pos_x, pos_y; //  explorer position
-	private String direction="N";
+	private String direction="E";
 	private String obstacles;
 	
 	
@@ -26,11 +26,11 @@ public class PlanetExplorer {
 		this.y=y;
 		this.obstacles=obstacles;
 	
-		String[] splited = obstacles.split("(");
+		/*String[] splited = obstacles.split("(");
 		String[] splited2 = splited[0].split(")");
 		String[] splited3 = splited[0].split(",");
 		this.obs_x = Integer.parseInt(splited3[0]);
-		this.obs_y = Integer.parseInt(splited3[1]);
+		this.obs_y = Integer.parseInt(splited3[1]);*/
 		
 
 
@@ -51,21 +51,26 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
-		switch(command){
-		
-		case "f":
-			if(this.direction == "N")
-			{
-				if(obs_y==pos_y)
-					return "("+pos_x+","+pos_y+","+direction+")"+"("+obs_x+","+obs_y+")";
-				else
+		char[] commands = command.toCharArray();
+		for(int i=0; i<commands.length; i++)
+		{
+			switch(commands[i]){
+			
+			case 'f':
+				if(this.direction == "N")
 				{
 					this.pos_y++;
-					return "("+pos_x+","+pos_y+","+direction+")"+"("+obs_x+","+obs_y+")";
+					return "("+pos_x+","+pos_y+","+direction+")";
 				}
+				else if(this.direction == "E")
+				{
+					this.pos_x++;
+					return "("+pos_x+","+pos_y+","+direction+")";
+				}
+			
 			}
-		
 		}
+		
 		
 		return null;
 	}
