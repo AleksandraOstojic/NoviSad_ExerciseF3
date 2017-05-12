@@ -50,15 +50,17 @@ public class PlanetExplorer {
 		switch(command){
 		
 		case "f":
-			if(obs_x == pos_x || obs_y==pos_y)
-				return "("+pos_x+","+pos_y+","+direction+")"+ "("+obs_x+","+obs_y+")";
-			else
+			if(this.direction == "N")
 			{
-				if(this.direction == "N")
+				if(obs_y==pos_y)
+					return "("+pos_x+","+pos_y+","+direction+")"+"("+obs_x+","+obs_y+")";
+				else
+				{
 					this.pos_y++;
-				return "("+pos_x+","+pos_y+","+direction+")";
+					return "("+pos_x+","+pos_y+","+direction+")"+"("+obs_x+","+obs_y+")";
+				}
 			}
-			
+		
 		}
 		
 		return null;
