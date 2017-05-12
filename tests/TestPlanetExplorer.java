@@ -9,7 +9,7 @@ public class TestPlanetExplorer {
 		
 		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
 		
-		String expected = "(0,1,N)";
+		String expected = "(0,0,N)";
 		
 		assertEquals(expected, planet.executeCommand("f"));
 	}
