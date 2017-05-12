@@ -9,16 +9,17 @@ public class TestPlanetExplorer {
 		
 		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
 		
-		String expected = "(0,0,N)";
+		String expected = "(0,1,N)";
 		
 		assertEquals(expected, planet.executeCommand("f"));
 	}
 	
 	@Test
 	public void test_executeCommand2(){
-PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
 		
-		String expected = "(0,0,N)";
+		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
+		
+		String expected = "(1,0,E)";
 		
 		assertEquals(expected, planet.executeCommand("f"));
 	}
