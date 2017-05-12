@@ -16,3 +16,4 @@ RefactoringAction 1494613073538 PlanetExplorer.java RENAME getFormatedCoord=>Str
 RefactoringAction 1494613077051 PlanetExplorer.java RENAME get=>String getCoordinates() METHOD
 RefactoringAction 1494613089576 PlanetExplorer.java REMOVE getCoordinates() METHOD
 EditAction 1494613450320 TestPlanetExplorer.java 298 1 3 1
+EditAction 1494613459378 PlanetExplorer.java 1598 2 5 0
