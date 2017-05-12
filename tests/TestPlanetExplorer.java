@@ -7,7 +7,7 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_executeCommand() {
 		
-		PlanetExplorer planet = new PlanetExplorer(100,100, null);
+		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
 		
 		String expected = "(0,1,N)";
 		

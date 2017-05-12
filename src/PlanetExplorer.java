@@ -6,7 +6,8 @@
 public class PlanetExplorer {
 	
 	private int x,y; //coordinates of a grid
-	private int pos_x=0, pos_y=0; //  explorer position
+	private int obs_x, obs_y; //coordinates of obstacles
+	private int pos_x, pos_y; //  explorer position
 	private String direction="N";
 	private String obstacles;
 	
@@ -19,9 +20,17 @@ public class PlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  
 		 
 	 */
+		this.pos_x=0;
+		this.pos_y=0;
 		this.x=x;
 		this.y=y;
 		this.obstacles=obstacles;
+		
+		String[] splited = obstacles.split("(|\\,|\\)");
+		this.obs_x = Integer.parseInt(splited[0]);
+		this.obs_y = Integer.parseInt(splited[1]);
+		
+		
 		
 	}
 	
@@ -41,9 +50,15 @@ public class PlanetExplorer {
 		switch(command){
 		
 		case "f":
-			if(this.direction == "N")
-				this.pos_y++;
-			return "("+pos_x+","+pos_y+","+direction+")";
+			if(obs_x == pos_x || obs_y==pos_y)
+				return "("+pos_x+","+pos_y+","+direction+")"+ "("+obs_x+","+obs_y+")";
+			else
+			{
+				if(this.direction == "N")
+					this.pos_y++;
+				return "("+pos_x+","+pos_y+","+direction+")";
+			}
+			
 		}
 		
 		return null;
