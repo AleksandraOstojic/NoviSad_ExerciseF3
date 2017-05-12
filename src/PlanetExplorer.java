@@ -67,6 +67,11 @@ public class PlanetExplorer {
 					this.pos_x++;
 					return "("+pos_x+","+pos_y+","+direction+")";
 				}
+				else if(this.direction == "W")
+				{
+					this.pos_x--;
+					return "("+pos_x+","+pos_y+","+direction+")";
+				}
 			
 			}
 		}
