@@ -105,3 +105,8 @@ EditAction 1494615970695 PlanetExplorer.java 3049 18 24 0
 UnitTestCaseAction 1494615983306 TestPlanetExplorer.java OK
 UnitTestSessionAction 1494615983308 TestPlanetExplorer.java OK
 EditAction 1494615990595 PlanetExplorer.java 3045 18 24 0
+UnitTestCaseAction 1494616003770 TestPlanetExplorer.java OK
+UnitTestSessionAction 1494616003772 TestPlanetExplorer.java OK
+RefactoringAction 1494616021499 TestPlanetExplorer.java ADD void test_executeCommand2()/2 METHOD
+RefactoringAction 1494616025508 TestPlanetExplorer.java RENAME test_executeCommand2()/2=>void test_executeCommand3() METHOD
+EditAction 1494616038360 TestPlanetExplorer.java 789 3 12 3

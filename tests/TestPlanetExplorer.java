@@ -23,4 +23,13 @@ public class TestPlanetExplorer {
 		
 		assertEquals(expected, planet.executeCommand("f"));
 	}
+	@Test
+	public void test_executeCommand3(){
+		
+		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
+		planet.setDirection("W");
+		String expected = "(-1,0,E)";
+		
+		assertEquals(expected, planet.executeCommand("f"));
+	}
 }
