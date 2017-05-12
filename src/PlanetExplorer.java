@@ -8,7 +8,7 @@ public class PlanetExplorer {
 	private int x,y; //coordinates of a grid
 	private int obs_x, obs_y; //coordinates of obstacles
 	private int pos_x, pos_y; //  explorer position
-	private String direction="E";
+	private String direction="N";
 	private String obstacles;
 	
 	
@@ -73,6 +73,102 @@ public class PlanetExplorer {
 		
 		
 		return null;
+	}
+
+
+
+	public int getX() {
+		return x;
+	}
+
+
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+
+
+	public int getY() {
+		return y;
+	}
+
+
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+
+
+	public int getObs_x() {
+		return obs_x;
+	}
+
+
+
+	public void setObs_x(int obs_x) {
+		this.obs_x = obs_x;
+	}
+
+
+
+	public int getObs_y() {
+		return obs_y;
+	}
+
+
+
+	public void setObs_y(int obs_y) {
+		this.obs_y = obs_y;
+	}
+
+
+
+	public int getPos_x() {
+		return pos_x;
+	}
+
+
+
+	public void setPos_x(int pos_x) {
+		this.pos_x = pos_x;
+	}
+
+
+
+	public int getPos_y() {
+		return pos_y;
+	}
+
+
+
+	public void setPos_y(int pos_y) {
+		this.pos_y = pos_y;
+	}
+
+
+
+	public String getDirection() {
+		return direction;
+	}
+
+
+
+	public void setDirection(String direction) {
+		this.direction = direction;
+	}
+
+
+
+	public String getObstacles() {
+		return obstacles;
+	}
+
+
+
+	public void setObstacles(String obstacles) {
+		this.obstacles = obstacles;
 	}
 	
 }

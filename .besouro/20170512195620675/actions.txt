@@ -101,3 +101,4 @@ RefactoringAction 1494615926027 PlanetExplorer.java ADD void setDirection(String
 RefactoringAction 1494615926029 PlanetExplorer.java ADD String getObstacles() METHOD
 RefactoringAction 1494615926031 PlanetExplorer.java ADD void setObstacles(String) METHOD
 EditAction 1494615958973 TestPlanetExplorer.java 558 2 8 2
+EditAction 1494615970695 PlanetExplorer.java 3049 18 24 0
