@@ -8,7 +8,7 @@ public class PlanetExplorer {
 	private int x,y; //coordinates of a grid
 	private int obs_x, obs_y; //coordinates of obstacles
 	private int pos_x, pos_y; //  explorer position
-	private String direction="N";
+	private String direction;
 	private String obstacles;
 	
 	
