@@ -6,6 +6,11 @@ public class TestPlanetExplorer {
 
 	@Test
 	public void test_executeCommand() {
-		fail("Not yet implemented");
+		
+		PlanetExplorer planet = new PlanetExplorer(100,100, null);
+		
+		String expected = "(0,1,N)";
+		
+		assertEquals(expected, planet.executeCommand("f"));
 	}
 }
