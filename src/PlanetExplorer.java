@@ -26,10 +26,14 @@ public class PlanetExplorer {
 		this.y=y;
 		this.obstacles=obstacles;
 	
-		String[] splited = obstacles.split("(|\\,|\\)");
-		this.obs_x = Integer.parseInt(splited[0]);
-		this.obs_y = Integer.parseInt(splited[1]);
+		String[] splited = obstacles.split("(");
+		String[] splited2 = splited[0].split(")");
+		String[] splited3 = splited[0].split(",");
+		this.obs_x = Integer.parseInt(splited3[0]);
+		this.obs_y = Integer.parseInt(splited3[1]);
 		
+
+
 		
 		
 	}
