@@ -82,3 +82,22 @@ RefactoringAction 1494615684048 TestPlanetExplorer.java RENAME test_executeC=>vo
 RefactoringAction 1494615697586 TestPlanetExplorer.java RENAME test_executeCommand()/2=>void test_executeCommand2() METHOD
 EditAction 1494615831430 TestPlanetExplorer.java 503 2 6 2
 EditAction 1494615868683 TestPlanetExplorer.java 508 2 6 2
+UnitTestCaseAction 1494615881371 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1494615881372 TestPlanetExplorer.java FAIL
+RefactoringAction 1494615926006 PlanetExplorer.java ADD int getX() METHOD
+RefactoringAction 1494615926007 PlanetExplorer.java ADD void setX(int) METHOD
+RefactoringAction 1494615926009 PlanetExplorer.java ADD int getY() METHOD
+RefactoringAction 1494615926010 PlanetExplorer.java ADD void setY(int) METHOD
+RefactoringAction 1494615926012 PlanetExplorer.java ADD int getObs_x() METHOD
+RefactoringAction 1494615926014 PlanetExplorer.java ADD void setObs_x(int) METHOD
+RefactoringAction 1494615926015 PlanetExplorer.java ADD int getObs_y() METHOD
+RefactoringAction 1494615926017 PlanetExplorer.java ADD void setObs_y(int) METHOD
+RefactoringAction 1494615926019 PlanetExplorer.java ADD int getPos_x() METHOD
+RefactoringAction 1494615926020 PlanetExplorer.java ADD void setPos_x(int) METHOD
+RefactoringAction 1494615926022 PlanetExplorer.java ADD int getPos_y() METHOD
+RefactoringAction 1494615926023 PlanetExplorer.java ADD void setPos_y(int) METHOD
+RefactoringAction 1494615926025 PlanetExplorer.java ADD String getDirection() METHOD
+RefactoringAction 1494615926027 PlanetExplorer.java ADD void setDirection(String) METHOD
+RefactoringAction 1494615926029 PlanetExplorer.java ADD String getObstacles() METHOD
+RefactoringAction 1494615926031 PlanetExplorer.java ADD void setObstacles(String) METHOD
+EditAction 1494615958973 TestPlanetExplorer.java 558 2 8 2

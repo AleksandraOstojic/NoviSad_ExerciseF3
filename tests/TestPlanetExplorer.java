@@ -8,7 +8,7 @@ public class TestPlanetExplorer {
 	public void test_executeCommand() {
 		
 		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
-		
+		planet.setDirection("N");
 		String expected = "(0,1,N)";
 		
 		assertEquals(expected, planet.executeCommand("f"));
@@ -18,7 +18,7 @@ public class TestPlanetExplorer {
 	public void test_executeCommand2(){
 		
 		PlanetExplorer planet = new PlanetExplorer(100,100, "(0,1)");
-		
+		planet.setDirection("E");
 		String expected = "(1,0,E)";
 		
 		assertEquals(expected, planet.executeCommand("f"));
