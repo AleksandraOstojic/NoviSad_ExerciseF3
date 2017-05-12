@@ -25,18 +25,11 @@ public class PlanetExplorer {
 		this.x=x;
 		this.y=y;
 		this.obstacles=obstacles;
-	/*	
+	
 		String[] splited = obstacles.split("(|\\,|\\)");
 		this.obs_x = Integer.parseInt(splited[0]);
-		this.obs_y = Integer.parseInt(splited[1]);*/
-		char[] obs = obstacles.toCharArray();
-		for(int i=0; i<obs.length; i++)
-		{
-			if(i==1)
-				this.obs_x = (int)(obs[1]);
-			if(i==3)
-				this.obs_y = (int)(obs[3]);
-		}
+		this.obs_y = Integer.parseInt(splited[1]);
+		
 		
 		
 	}
